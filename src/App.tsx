@@ -1,6 +1,3 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/button-has-type */
-/* eslint-disable prettier/prettier */
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 // eslint-disable-next-line import/no-unresolved
@@ -22,7 +19,10 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
+        <button type="button" onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
