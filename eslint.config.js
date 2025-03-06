@@ -46,7 +46,6 @@ export default tseslint.config(
       'react/button-has-type': 'error',
       'react/react-in-jsx-scope': ['off'],
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
-
       'no-unused-vars': ['warn']
     }
   },
