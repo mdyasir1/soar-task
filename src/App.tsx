@@ -1,5 +1,11 @@
-function Card() {
-  return <h2>Hello</h2>
+import Card from './components/Card'
+
+function App() {
+  return (
+    <div>
+      <Card />
+    </div>
+  )
 }
 
-export default Card
+export default App

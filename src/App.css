@@ -1,0 +1,80 @@
+#card-box {
+  background: linear-gradient(45deg, rgb(116, 116, 125), rgb(0, 0, 0));
+  border-radius: 20px;
+  color: white;
+  height: 235px;
+  width: 350px;
+  margin: 14px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#chip {
+  width: 34.89px;
+  height: 34.89px;
+  align-content: center;
+}
+
+#first-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 22px 30px;
+}
+
+#insiders {
+  line-height: 20px;
+  width: 63px;
+  height: 38px;
+}
+
+#second-line {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 6px 30px;
+  line-height: 25 px;
+}
+
+#third-line {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: linear-gradient(45deg, rgb(96, 96, 103), rgb(0, 0, 0));
+  padding: 10px 30px;
+  align-items: center;
+  width: 350px;
+  height: 70px;
+  letter-spacing: 3px;
+  font-size: large;
+  font-weight: 500;
+}
+
+.headings {
+  font-size: smaller;
+}
+.content {
+  font-size: larger;
+}
+
+#cir-1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(240, 236, 236, 0.5);
+}
+
+#cir-2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(240, 236, 236, 0.5);
+  margin-left: -15px;
+}
+
+#card-icon {
+  display: flex;
+}
