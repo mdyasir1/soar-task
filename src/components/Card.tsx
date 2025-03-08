@@ -19,7 +19,7 @@ function Card() {
         </span>
       </section>
       <footer id="third-line">
-        <span>3778 **** **** 1234</span>
+        <span id="card-number">3778 **** **** 1234</span>
         <span id="card-icon">
           <div id="cir-1"></div>
           <div id="cir-2"></div>

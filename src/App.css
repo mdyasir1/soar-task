@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #card-box {
@@ -10,6 +9,7 @@
   height: 235px;
   width: 350px;
   margin: 14px;
+  font-family: sans-serif;
 
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
 }
 
 #insiders {
-  line-height: 20px;
+  line-height: 0px;
   width: 63px;
   height: 38px;
 }
@@ -40,7 +40,6 @@
   justify-content: flex-start;
   gap: 40px;
   padding: 6px 30px;
-  line-height: 25 px;
 }
 
 #third-line {
@@ -55,9 +54,10 @@
   height: 70px;
   letter-spacing: 3px;
   font-size: large;
-  font-weight: 500;
 }
-
+#card-number {
+  font-weight: bold;
+}
 .headings {
   font-size: smaller;
 }
@@ -82,4 +82,9 @@
 
 #card-icon {
   display: flex;
+}
+
+#user-detail,
+#card-expiry {
+  line-height: 0px;
 }
