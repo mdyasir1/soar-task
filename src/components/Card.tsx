@@ -6,7 +6,7 @@ function Card() {
           <p className="headings">Balance</p>
           <p className="content">$5,756</p>
         </div>
-        <img id="chip" src="../chip.png" alt="chip" />
+        <img id="chip" src="chip.png" alt="chip" />
       </header>
       <section id="second-line">
         <span id="user-detail">
