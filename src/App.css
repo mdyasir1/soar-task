@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -29,8 +29,8 @@
   padding: 22px 30px;
 }
 
-#insiders {
-  /* line-height: 0px; */
+#insiders { */
+  /* line-height: 0px;
   width: 63px;
   height: 38px;
 }
@@ -82,4 +82,4 @@
 
 #card-icon {
   display: flex;
-}
+} */
