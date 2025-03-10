@@ -5,16 +5,16 @@ interface TransferProps {
 }
 
 function Transfer(props: TransferProps) {
-  const { img = 'https://avatar.iran.liara.run/public?2' } = props
+  const { img = 'https://avatar.iran.liara.run/public?' } = props
   return (
     <div id="Transfer-parent" className="flex flex-col items-center w-full">
       <div id="Transfer-avatar" className="w-20 h-20 rounded-full bg-red-900">
         <img src={img} alt="" />
       </div>
-      <p id="name" className="">
+      <p id="name" className="font-light">
         {props.name}
       </p>
-      <p id="title" className="">
+      <p id="title" className="font-light text-blue-800">
         {props.title}
       </p>
     </div>
