@@ -19,6 +19,7 @@ const meta = {
     cardNumber: '9876 **** **** 0022',
     expiry: '11/23',
     name: 'Yasir',
+
     variant: 'dark'
   }
 } satisfies Meta<typeof Card>

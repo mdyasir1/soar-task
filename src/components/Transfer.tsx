@@ -9,8 +9,7 @@ function Transfer(props: TransferProps) {
   return (
     <div
       id="Transfer-parent"
-      className="flex flex-col items-center w-1/2 hover:bg-gray-400
-    "
+      className="flex flex-col items-center rounded-xl hover:bg-gray-100 p-4"
     >
       <div id="Transfer-avatar" className="w-20 h-20 rounded-full bg-red-900">
         <img src={img} alt="" />
@@ -18,7 +17,7 @@ function Transfer(props: TransferProps) {
       <p id="name" className="font-light">
         {props.name}
       </p>
-      <p id="title" className="font-light text-blue-800">
+      <p id="title" className="font-light text-blue-400">
         {props.title}
       </p>
     </div>
