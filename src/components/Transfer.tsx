@@ -7,7 +7,11 @@ interface TransferProps {
 function Transfer(props: TransferProps) {
   const { img = 'https://avatar.iran.liara.run/public?' } = props
   return (
-    <div id="Transfer-parent" className="flex flex-col items-center w-full">
+    <div
+      id="Transfer-parent"
+      className="flex flex-col items-center w-1/2 hover:bg-gray-400
+    "
+    >
       <div id="Transfer-avatar" className="w-20 h-20 rounded-full bg-red-900">
         <img src={img} alt="" />
       </div>
