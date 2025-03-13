@@ -1,7 +1,11 @@
-import TransferList from './features/TransferList'
+import Navbar from './components/Navbar'
 
 function App() {
-  return <TransferList />
+  return (
+    <div>
+      <Navbar />
+    </div>
+  )
 }
 
 export default App
