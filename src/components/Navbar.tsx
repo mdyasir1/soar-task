@@ -1,59 +1,51 @@
-// const menu: MenuProps[] = [
-//   { title: 'Dashboad', path: '' },
-//   { title: 'Transactions', path: '/Transactions' },
-//   { title: 'Accounts', path: '/Accounts' }
-// ]
-
-// type MenuProps = {
-//   title: string
-//   path: string
-// }
-
-// const MenuItem = ({ title, path }: MenuProps) => (
-//   <a className="w-full block p-6 py-4" href={path}>
-//     {title}
-//   </a>
-// )
-
-// function Navbar() {
-//   return (
-//     <div className="flex flex-col border-r max-w-56 min-h-screen">
-//       {/* {menu.map((item) => ( */}
-//       <MenuItem title="Rahman" path="" />
-//       {/* ))} */}
-//     </div>
-//   )
-// }
-
-// export default Navbar
-
-const menu = [
-  { title: 'Dashboard', path: '/' },
-  { title: 'Transactions', path: '/Transactions' },
-  { title: 'Accounts', path: '/Accounts' },
-  { title: 'Investments', path: '/' },
-  { title: 'Credit Cards', path: '/' },
-  { title: 'Loans', path: '/' },
-  { title: 'Services', path: '/' },
-  { title: 'My Priviliges', path: '/' },
-  { title: 'Setting', path: '/' }
-]
+import { NavLink } from 'react-router'
 
 type menuItemProps = {
   title: string
   path: string
+  img: string
 }
 
-function MenuItem({ title, path }: menuItemProps) {
-  return <a href={path}>{title}</a>
+const menu: menuItemProps[] = [
+  { title: 'Dashboard', path: '/dashboard', img: 'Dashboard.svg' },
+  { title: 'Transactions', path: '/transactions', img: 'Transactions.svg' },
+  { title: 'Accounts', path: '/accounts', img: 'Accounts.svg' },
+  { title: 'Investments', path: '/investments', img: 'Investments.svg' },
+  { title: 'Credit Cards', path: '/cards', img: 'CreditCards.svg' },
+  { title: 'Loans', path: '/loans', img: 'Loans.svg' },
+  { title: 'Services', path: '/services', img: 'Services.svg' },
+  { title: 'My Priviliges', path: '/priviliges', img: 'MyPriviliges.svg' },
+  { title: 'Setting', path: '/settings', img: 'Setting.svg' }
+]
+
+function MenuItem({ title, path, img }: menuItemProps) {
+  return (
+    <div className="flex">
+      <NavLink
+        to={path}
+        className={({ isActive }) =>
+          `px-[16px] py-2 flex gap-6 hover:text-black hover:opacity-100 transition-all ${isActive ? 'border-l-[4px] pl-[12px] opacity-100 text-black font-bold border-black' : 'text-black opacity-50'}`
+        }
+      >
+        <img src={img} alt="" />
+        {title}
+      </NavLink>
+    </div>
+  )
 }
 
 function Navbar() {
   return (
-    <div className="flex flex-col">
-      {menu.map((item) => (
-        <MenuItem key={item.title} path={item.path} title={item.title} />
-      ))}
+    <div className="bg-white min-h-screen">
+      <div className="flex gap-6 px-4 py-2">
+        <img src="SoarTask.svg" alt="" />
+        <h1 className="font-bold text-xl">Soar Task</h1>
+      </div>
+      <div className="w-60 inline max-w-72 flex flex-col gap-4 py-4">
+        {menu.map((item) => (
+          <MenuItem key={item.title} path={item.path} title={item.title} img={item.img} />
+        ))}
+      </div>
     </div>
   )
 }
