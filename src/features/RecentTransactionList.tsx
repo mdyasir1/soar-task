@@ -1,6 +1,6 @@
 import RecentTransactions from '../components/RecentTransactions'
 
-function RecentTransferList() {
+function RecentTransactionList() {
   return (
     <div className="border border-2 bg-slate-100 max-h-60 rounded-3xl mx-4 my-6 overflow-auto">
       {/* <Navbar /> */}
@@ -31,4 +31,4 @@ function RecentTransferList() {
   )
 }
 
-export default RecentTransferList
+export default RecentTransactionList
