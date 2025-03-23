@@ -30,7 +30,7 @@ function Card(props: CardProps) {
   return (
     <div
       id="card-box"
-      className={`${isDark ? DarkTheme.container : 'bg-white text-black'} rounded-3xl w-80 min-w-80 max-w-96 m-[14px] font-sans flex flex-col justify-between overflow-auto box-border`}
+      className={`${isDark ? DarkTheme.container : 'bg-white text-black'} rounded-3xl w-80 max-h-56 min-w-80 max-w-96 m-[14px] font-sans flex flex-col justify-between overflow-auto box-border`}
     >
       <header id="first-line" className="flex flex-row justify-between px-[30px] py-[22px]">
         <div id="insiders" className="w-[63px] h-[38px]">

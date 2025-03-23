@@ -36,10 +36,10 @@ function MenuItem({ title, path, img }: menuItemProps) {
 
 function Navbar() {
   return (
-    <div className="bg-white min-h-screen">
-      <div className="flex gap-6 px-4 py-2">
+    <div className="bg-white min-h-screen border">
+      <div className="flex gap-2 px-8 py-6 ">
         <img src="SoarTask.svg" alt="" />
-        <h1 className="font-bold text-xl">Soar Task</h1>
+        <h1 className="text-xl font-bold text-[#343c6a]">Soar Task</h1>
       </div>
       <div className="w-60 inline max-w-72 flex flex-col gap-4 py-4">
         {menu.map((item) => (
